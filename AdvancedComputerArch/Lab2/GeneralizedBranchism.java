@@ -9,7 +9,6 @@ import java.lang.*;
 import java.util.*;
 
 public class GeneralizedBranchism {
-    private static Queue<Integer> globalHistory = new LinkedList<>();
     private static String global = "";
     private static HashMap<String, String> localBHT = new HashMap<>();
 
@@ -219,7 +218,6 @@ public class GeneralizedBranchism {
     //the global history will first contain 0 as its state
     public static void initializeGlobalHistory(int m) {
         for (int i = 0; i < m; i++) {
-            globalHistory.add(0); //dont use queue
             global += "0";
         }
     }
