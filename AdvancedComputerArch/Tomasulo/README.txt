@@ -20,3 +20,8 @@ java Tomasulo instruction.txt 3 3 3 2 2 1 2 3 3 1 NT
 java Tomasulo instruction2.txt 3 3 3 2 2 1 2 3 3 1 T
 java Tomasulo instruction3.txt 3 3 3 2 2 1 2 3 3 1 T
 java Tomasulo instTest.txt 3 3 3 2 2 1 2 3 3 1 T
+
+
+SpeculativeTomasulo.java is the program which executes speculative tomasulo. 
+Tomasulo.java is the program which executes non-speculative tomasulo.
+The branch prediction is the static branch prediction which is one of the input parameter which indicates if the Branch instruction is always taken (T) or always not taken (NT). If the branch is taken, then we execute all the instruction uptil the branch instruction in a loop for 4 times. (It is assumed that the loop exits after 4th iteration)
