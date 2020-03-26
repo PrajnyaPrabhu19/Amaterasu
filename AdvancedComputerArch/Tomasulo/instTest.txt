@@ -1,0 +1,10 @@
+LW r5 r1
+LW r6 r2
+LW r7 r3
+ADD r8 r6 r5
+ADD r9 r8 r7
+ADD r1 r1 r3
+ADD r2 r2 r3
+ADD r3 r3 r0
+SW r9 r1
+BNE r4 r1
