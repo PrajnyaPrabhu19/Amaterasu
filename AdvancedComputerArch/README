@@ -1,0 +1,19 @@
+Cachesim.java is an cache simulator which reads trace files consisting of Load and store instructions.
+The cache sim has implemented direct, fully associative, two-way and four-way associative cache.
+
+The memtrace file should be in format:
+  Instruction_Type Offset_In_Decimal MemoryAddress_In_Hex
+  Example:
+    LW 200 4cca98201
+    SW -100 ffa983f00
+  The offset in each line indicates that the decimal amount that needs to be added/subtracted(when negative) to the Memory address 
+  after converting the hex to integer.
+
+The output will print:
+  miss rate
+  hit rate
+  # of sets
+  # of ways
+  # of tag bits
+  # of index bits
+  # of offset bits
